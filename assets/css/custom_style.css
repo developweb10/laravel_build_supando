@@ -1,0 +1,968 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/************Fonts****************/
+/**  font-family: 'Outfit', sans-serif; **/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+/** font-family: 'Inter', sans-serif; **/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/************Fonts ends****************/
+:root {
+    --thunderbird: #FFC600;
+    --mirage: #18242a;
+    --supernova: #bd1622;
+    --outer-space: #2C3538;
+    --trout: #4D585D;
+    --white: #ffffff;
+    --white-secondary: #A3A7AA;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--mirage);
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.p1 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p1 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p2 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.p3 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.p4 {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+label {
+    font-weight: 500;
+    color: var(--white);
+    display: inline-block;
+}
+
+.label1 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.label2 {
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.label3 {
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+.label4 {
+    font-size: 10px;
+    line-height: 16px;
+
+}
+
+button {
+    outline: unset;
+    border: none;
+    background: transparent;
+}
+
+.btn {
+    width: 343px;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--mirage);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    border: unset;
+    text-align: center;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+}
+
+.btn.btn-primary {
+    background-color: var(--thunderbird);
+
+}
+
+.btn.btn-ternary-primary {
+    background-color: var(--mirage);
+    color: var(--thunderbird);
+}
+
+img {
+    max-width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+a {
+    color: var(--thunderbird);
+
+}
+
+
+.mainWrapper {
+    padding-top: 33px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/****************header css ******************/
+header {
+    background-color: var(--outer-space);
+}
+
+.headerContainer {
+    padding: 14px 16px;
+
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headerLogo {
+    margin-right: 60px;
+    width: 86px;
+}
+
+.headerLogo .headertoggle {
+    width: 26px;
+    line-height: 1;
+}
+
+.headerLogo img {
+    width: 100%;
+}
+
+.headerMenu {
+    margin-right: 15px;
+}
+
+.headerMenuList {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 32px;
+    flex-wrap: wrap;
+
+}
+
+.headerMenuList li a {
+    color: var(--white-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.headerMenuList li.active a {
+    color: var(--thunderbird);
+}
+
+.headerMenuList li.active a:before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 6px;
+    background-color: var(--thunderbird);
+    left: 0;
+}
+
+/* .headerAuthMenu{
+    margin-left: auto;
+} */
+.headerAuthMenuList {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 12px;
+    margin-left: auto;
+
+}
+
+.headerAuthMenuList li a {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.headerAuthMenuList li a.headerLogin_link {
+    color: var(--thunderbird);
+}
+
+.headerAuthMenuList li a.headerRegister_link {
+    background-color: var(--thunderbird);
+    color: var(--mirage);
+    border-radius: 10px;
+    padding: 6px 20px;
+    line-height: 1;
+}
+
+.headerWrapper .custom-input {
+    width: 121px;
+    height: 27px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 10px;
+}
+
+.headerPassword {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.headerInputGroup {
+    position: relative;
+}
+
+.headerInputGroup .error-message {
+    position: absolute;
+    bottom: -17px;
+    font-size: 12px;
+    color: red;
+}
+
+.headerPassword .headerLogin_link {
+    padding-left: 12px;
+    color: var(--thunderbird);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 154%;
+    left: 0;
+    min-width: 150px;
+    background-color: var(--outer-space);
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.30);
+    margin-right: 0;
+    transition: 0.6s all ease;
+}
+
+/* .headerToggle{
+    position: relative;
+} */
+.toggle-menu .headerMenuList {
+    display: block;
+}
+
+.toggle-menu .headerMenuList li a {
+    width: 100%;
+    display: block;
+    padding: 5px 0px 5px 10px;
+}
+
+.toggle-menu .headerMenuList li a:before {
+    width: 6px;
+    height: 100%;
+    top: 0;
+    bottom: unset;
+    right: 0;
+    left: unset;
+
+}
+
+/******header css ends******/
+
+/********************* Auth css*********************/
+.authWrapper {
+    width: 353px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.authWrapper .custom-dropdown {
+    position: relative;
+}
+
+.authWrapper .dropdown-list {
+    position: absolute;
+    list-style-type: none;
+    background-color: var(--trout);
+    min-width: 52px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.authWrapper .dropdown-list li {
+    margin-bottom: 15px;
+}
+
+.authWrapper .dropdown-list li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-toggle {
+    position: relative;
+}
+
+.dropdown-toggle .dropdown-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -7px;
+
+}
+
+/*****************form and input ****************************/
+.form-group {
+    margin-bottom: 16px;
+}
+
+.input-group {
+    padding: 6px 16px;
+    gap: 10px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background-color: var(--outer-space);
+    height: 44px;
+    position: relative;
+}
+
+.input-group .input-logo {
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-group .input-logo::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--trout);
+    position: absolute;
+    margin-left: 53px;
+}
+
+span.input-password-icon {
+    position: absolute;
+    right: 12px;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-group .form-input {
+    background-color: var(--outer-space);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: unset;
+    width: 100%;
+    padding: 0 16px 0 40px;
+}
+
+/* .input-group input[type="password"].form-input{
+    padding: 0 20px;
+} */
+.input-group .form-input:focus {
+    outline: unset;
+}
+
+.label-required {
+    position: relative;
+}
+
+.label-required::after {
+    content: "*";
+    color: var(--thunderbird);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.input-term {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.form-input-checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid var(--white);
+    background-color: var(--mirage);
+}
+
+.input-term label {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.input-term label a {
+    text-decoration: underline;
+}
+
+.form-submit input[type="submit"] {
+    width: 100%;
+    /* margin-top: 46px; */
+}
+
+.form-submit {
+    margin-top: 40px;
+}
+
+.ng-otp-input-wrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.ng-otp-input-wrapper .otp-input {
+    background-color: var(--outer-space);
+    border: unset !important;
+    outline: unset !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    width: 74px !important;
+    height: 44px !important;
+
+}
+
+ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
+    margin-right: 0 !important;
+}
+
+/************************** form and input ends **************/
+
+
+.switchAuth {
+    width: 343px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.switchAuth_title {
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 22px;
+}
+
+.social-login a {
+    height: 32px;
+    width: 32px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.have-account {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.resend_otp {
+    color: var(--trout);
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+}
+
+.padding11px {
+    margin-top: 11px;
+}
+
+.padding24px {
+    margin-top: 24px;
+}
+
+.margin-bottom8px {
+    margin-bottom: 8px;
+}
+
+.paddingboth24px {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/********** Common css *********/
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.g-15 {
+    gap: 15px;
+}
+
+/***************margin-pdding***********************/
+.mr-9 {
+    margin-right: 9px;
+}
+
+.mt-22px {
+    margin-top: 22px;
+}
+
+.mt-24px {
+    margin-top: 24px;
+}
+
+.mb-24px {
+    margin-bottom: 24px;
+}
+
+.mt-36px {
+    margin-top: 36px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pb-20px {
+    padding-bottom: 20px;
+}
+
+.pt-20px {
+    padding-top: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.marginbottom20px {
+    margin-bottom: 20px;
+}
+
+.radio-label input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+}
+
+.radio-label {
+    position: relative;
+}
+
+.radio-label .custom-radio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 9px;
+    position: relative;
+}
+
+.radio-label input[type="radio"]:checked~.custom-radio {
+    border-color: var(--thunderbird);
+}
+
+.radio-label input[type="radio"]:checked~.custom-radio:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--thunderbird);
+    border-radius: 50%;
+}
+
+.custom-input {
+    background-color: #18242A;
+    padding: 10px;
+}
+
+.custom-input {
+    width: 100%;
+    height: 60;
+    padding: 5px;
+    color: white;
+    border: none;
+    background-color: #18242A;
+    outline: none;
+}
+
+.gap-4 {
+    gap: 4px
+}
+
+
+
+/************************footer *********************/
+footer {
+    margin-top: 90px;
+    background-color: var(--outer-space);
+}
+
+.footerBorder {
+    border: 1px solid var(--trout);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footerMenu {
+    background-color: var(--outer-space);
+}
+
+.footerCopyright {
+    background-color: var(--mirage);
+    padding: 0 20px;
+}
+
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.footerRow>div {
+    padding: 0 10px;
+}
+
+.footer-menu {
+    padding: 36px 20px 20px;
+}
+
+.footer-menu p {
+    text-shadow: 0px 7.665505409240723px 7.665505409240723px rgba(0, 0, 0, 0.30);
+    line-height: 26px;
+}
+
+.footerMenuHeading {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--thunderbird);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footerCopyright p {
+    color: var(--trout)
+}
+
+.footerCopyright .footerContainer {
+    padding: 16px 0;
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+@media screen and (min-width:1200px) {
+    .footerContainer {
+        width: 100%;
+        max-width: 1164px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .footerRow .col-2 {
+        width: 20%;
+    }
+
+    .footerRow .col-3 {
+        width: 30%;
+    }
+}
+
+
+
+
+/*******************footer ends******************/
+
+
+
+/* .vertical-menu {
+    flex-direction: column;
+  } */
+.menu-visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.edge-border {
+    border-radius: 5px;
+    vertical-align: auto;
+    border: 5px solid red;
+    /* Adjust border properties as needed */
+}
+
+.borderrr {
+
+    display: table-cell;
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    vertical-align: middle;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+.spacelr {
+    margin: 10px, 15px, 0px, 15px;
+
+}
+
+.gradient-1 {
+    background: linear-gradient(180deg, #4D585D 0%, #2C3538 14.17%, #2C3538 100%);
+
+}
+
+.main-wrapper {
+    padding: 16px 20px;
+}
+
+.side-wrapper {
+    min-height: 80vh;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.left-side-wrapper {
+    width: 16.67%;
+}
+
+.right-side-wrapper {
+    width: 25%;
+}
+
+
+/************************************** Responsive css ***********************/
+@media screen and (max-width:1425px) and (min-width:768px) {
+    .headerMenuList li a {
+        font-size: 12px;
+    }
+
+    .headerLogo {
+        margin-right: 30px;
+    }
+
+    .headerMenuList li.active a:before {
+        bottom: -23px;
+    }
+}
+
+@media screen and (max-width:1265px) and (min-width:768px) {
+    .headerLogo {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .headerMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    .headerLoginbtn{
+        display: none;;
+    }
+}
+@media screen and (min-width:1266px) {
+    .headertoggle {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .desktop-menu {
+        display: none;
+    }
+    .headerPassword{
+        display: none;
+    }
+    .headerAuthMenu{
+        margin-left: auto;
+    }
+}
+
+/* CSS for the modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Ensure the modal appears on top of other content */
+}
+
+/* CSS for the modal card */
+.modal-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button for the modal */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
