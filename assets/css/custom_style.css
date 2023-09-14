@@ -28,7 +28,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+body * {
     font-family: 'Inter', sans-serif;
     color: var(--white);
 }
@@ -447,9 +448,10 @@ span.input-password-icon {
     transform: translateY(-50%);
 }
 
-.input-group .form-input {
-    background-color: var(--outer-space);
-    color: var(--white);
+.input-group .form-input,
+.input-group .form-input.ng-touched {
+    background-color: var(--outer-space) !important;
+    color: var(--white) !important;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -460,9 +462,9 @@ span.input-password-icon {
     padding: 0 16px 0 0px;
 }
 
-/* .input-group input[type="password"].form-input{
-    padding: 0 20px;
-} */
+.input-group input[type="password"].form-input{
+    padding: 0 40px;
+}
 .input-group .form-input:focus {
     outline: unset;
 }
