@@ -28,8 +28,7 @@ h1,
 h2,
 h3,
 h4,
-p,
-body * {
+p {
     font-family: 'Inter', sans-serif;
     color: var(--white);
 }
@@ -407,7 +406,7 @@ header {
 }
 
 .input-group {
-    padding: 6px 16px;
+    padding: 6px 16px 6px 16px;
     gap: 10px;
     display: flex;
     border-radius: 10px;
@@ -458,7 +457,7 @@ span.input-password-icon {
     line-height: normal;
     border: unset;
     width: 100%;
-    padding: 0 16px 0 40px;
+    padding: 0 16px 0 0px;
 }
 
 /* .input-group input[type="password"].form-input{
@@ -999,4 +998,24 @@ input[type=number] {
   .cdk-global-overlay-wrapper .mat-mdc-dialog-container  p{
     margin-top: 10px ;
     margin-bottom: 25px;
+}
+
+
+#countryCode{
+    background-color: var(--outer-space);
+    color:var(--white);
+    border: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#countryCode:focus{
+    outline: 0 ;
+}
+.countryCode_wrapper{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--trout);
+    padding-left: 36px;
 }
