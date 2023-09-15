@@ -40,6 +40,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .h1 {
@@ -156,7 +157,10 @@ button {
     background-color: var(--thunderbird);
 
 }
-
+.btn.btn-primary:focus,
+.btn.btn-primary:active{
+    background-color:#D19700;
+}
 .btn.btn-ternary-primary {
     background-color: var(--mirage);
     color: var(--thunderbird);
@@ -268,7 +272,7 @@ header {
 .headerAuthMenuList li a {
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
 }
@@ -369,6 +373,7 @@ header {
 
 .authWrapper .custom-dropdown {
     position: relative;
+    padding-right: 3px;
 }
 
 .authWrapper .dropdown-list {
@@ -378,6 +383,7 @@ header {
     min-width: 52px;
     padding: 10px;
     border-radius: 10px;
+    z-index: 99;
 }
 
 .authWrapper .dropdown-list li {
@@ -390,15 +396,23 @@ header {
 
 .dropdown-toggle {
     position: relative;
+    padding-right: 10px;
 }
-
-.dropdown-toggle .dropdown-arrow {
+.input-group  .input-logo{
+    border-right: 1px solid var(--trout);
+}
+.input-group  .input-logo .dropdown-toggle::before {
+    content: '';
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -7px;
-
+    right: 3px;
+    height: 5px;
+    width: 9px;
+    background:url(../img/chevron_down.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /*****************form and input ****************************/
@@ -407,8 +421,7 @@ header {
 }
 
 .input-group {
-    padding: 6px 16px 6px 16px;
-    gap: 10px;
+    padding: 6px 16px 6px 8px;
     display: flex;
     border-radius: 10px;
     border: 1px solid var(--trout);
@@ -422,15 +435,18 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
-    width: 32px;
-    position: absolute;
+    /* min-height: 32px;
+    min-width: 32px; */
+    /* position: absolute;
     left: 6px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
-
-.input-group .input-logo::after {
+/* .input-group .input-logo img{
+    min-height: 32px;
+    min-width: 32px;
+} */
+/* .input-group .input-logo::after {
     content: '';
     display: block;
     width: 1px;
@@ -438,8 +454,11 @@ header {
     background-color: var(--trout);
     position: absolute;
     margin-left: 53px;
+} */
+.input-group .input-logo  img{
+    min-width: 32px;
+    min-height: 32px;
 }
-
 span.input-password-icon {
     position: absolute;
     right: 12px;
@@ -459,12 +478,12 @@ span.input-password-icon {
     line-height: normal;
     border: unset;
     width: 100%;
-    padding: 0 16px 0 0px;
+    padding: 0 16px;
 }
 
-.input-group input[type="password"].form-input{
+/* .input-group input[type="password"].form-input{
     padding: 0 40px;
-}
+} */
 .input-group .form-input:focus {
     outline: unset;
 }
@@ -542,7 +561,12 @@ span.input-password-icon {
 ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
     margin-right: 0 !important;
 }
-
+.input-group  .countryCodeInput{
+    max-width: 60px;
+    padding:0 10px ;
+    border-right: 1px solid var(--trout);
+    text-align: center;
+}
 /************************** form and input ends **************/
 
 
@@ -673,6 +697,7 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 
 .radio-label {
     position: relative;
+    width: 100%;
 }
 
 .radio-label .custom-radio {
@@ -720,7 +745,9 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 }
 
 
-
+.resend-otp{
+    text-transform: uppercase;
+}
 /************************footer *********************/
 footer {
     margin-top: 90px;
@@ -1019,5 +1046,5 @@ input[type=number] {
     display: flex;
     align-items: center;
     border-right: 1px solid var(--trout);
-    padding-left: 36px;
+    /* padding-left: 36px; */
 }
