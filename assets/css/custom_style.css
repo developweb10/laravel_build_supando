@@ -559,7 +559,7 @@ span.input-password-icon {
 
 .ng-otp-input-wrapper .otp-input {
     background-color: var(--outer-space);
-    border: unset !important;
+    border: 1px solid var(--outer-space)!important ;
     outline: unset !important;
     font-size: 16px !important;
     font-style: normal;
@@ -571,7 +571,10 @@ span.input-password-icon {
     height: 44px !important;
 
 }
-
+.border-red .otp-input{
+    border-color: var(--error-message)  !important;
+    color:var(--error-message)
+}
 ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
     margin-right: 0 !important;
 }
