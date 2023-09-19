@@ -473,8 +473,7 @@ span.input-password-icon {
 }
 
 .input-group .form-input,
-.input-group .form-input.ng-touched,
-.input-group input.form-input:-internal-autofill-selected {
+.input-group .form-input.ng-touched {
     background-color: var(--outer-space) !important;
     color: var(--white) !important;
     font-family: 'Inter', sans-serif;
@@ -486,7 +485,16 @@ span.input-password-icon {
     width: 100%;
     padding: 0 16px;
 }
-
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:focus{
+    -webkit-text-fill-color:  var(--white) !important;
+    -webkit-box-shadow: 0 0 0px 40rem var(--outer-space) inset;
+}
+.headerContainer input:-webkit-autofill,
+.headerContainer input:-webkit-autofill:focus{
+   -webkit-text-fill-color:  var(--white) !important;
+   -webkit-box-shadow: 0 0 0px 40rem var(--mirage) inset;
+}
 /* .input-group input[type="password"].form-input{
     padding: 0 40px;
 } */
