@@ -20,7 +20,7 @@
     --trout: #4D585D;
     --white: #ffffff;
     --white-secondary: #A3A7AA;
-    --error-message:#FF5353;
+    --error-message: #FF5353;
 }
 
 
@@ -160,10 +160,12 @@ button {
     background-color: var(--thunderbird);
 
 }
+
 .btn.btn-primary:focus,
-.btn.btn-primary:active{
-    background-color:#D19700;
+.btn.btn-primary:active {
+    background-color: #D19700;
 }
+
 .btn.btn-ternary-primary {
     background-color: var(--mirage);
     color: var(--thunderbird);
@@ -318,9 +320,11 @@ header {
     font-size: 12px;
     color: var(--supernova);
 }
-.error-message{
+
+.error-message {
     color: var(--error-message);
 }
+
 .headerPassword .headerLogin_link {
     padding-left: 12px;
     color: var(--thunderbird);
@@ -403,10 +407,12 @@ header {
     position: relative;
     padding-right: 10px;
 }
-.input-group  .input-logo{
+
+.input-group .input-logo {
     border-right: 1px solid var(--trout);
 }
-.input-group  .input-logo .dropdown-toggle::before {
+
+.input-group .input-logo .dropdown-toggle::before {
     content: '';
     display: block;
     position: absolute;
@@ -415,7 +421,7 @@ header {
     right: 3px;
     height: 5px;
     width: 9px;
-    background:url(../img/chevron_down.png);
+    background: url(../img/chevron_down.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -440,30 +446,12 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 32px;
-    min-width: 32px; */
-    /* position: absolute;
-    left: 6px;
-    top: 50%;
-    transform: translateY(-50%); */
 }
-/* .input-group .input-logo img{
-    min-height: 32px;
-    min-width: 32px;
-} */
-/* .input-group .input-logo::after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: var(--trout);
-    position: absolute;
-    margin-left: 53px;
-} */
-.input-group .input-logo  img{
+.input-group .input-logo img {
     min-width: 32px;
     min-height: 32px;
 }
+
 span.input-password-icon {
     position: absolute;
     right: 12px;
@@ -485,19 +473,19 @@ span.input-password-icon {
     width: 100%;
     padding: 0 16px;
 }
+
 .input-group input:-webkit-autofill,
-.input-group input:-webkit-autofill:focus{
-    -webkit-text-fill-color:  var(--white) !important;
+.input-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--white) !important;
     -webkit-box-shadow: 0 0 0px 40rem var(--outer-space) inset;
 }
+
 .headerContainer input:-webkit-autofill,
-.headerContainer input:-webkit-autofill:focus{
-   -webkit-text-fill-color:  var(--white) !important;
-   -webkit-box-shadow: 0 0 0px 40rem var(--mirage) inset;
+.headerContainer input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--white) !important;
+    -webkit-box-shadow: 0 0 0px 40rem var(--mirage) inset;
 }
-/* .input-group input[type="password"].form-input{
-    padding: 0 40px;
-} */
+
 .input-group .form-input:focus {
     outline: unset;
 }
@@ -559,7 +547,7 @@ span.input-password-icon {
 
 .ng-otp-input-wrapper .otp-input {
     background-color: var(--outer-space);
-    border: 1px solid var(--outer-space)!important ;
+    border: 1px solid var(--outer-space) !important;
     outline: unset !important;
     font-size: 16px !important;
     font-style: normal;
@@ -571,19 +559,23 @@ span.input-password-icon {
     height: 44px !important;
 
 }
-.border-red .otp-input{
-    border-color: var(--error-message)  !important;
-    color:var(--error-message)
+
+.border-red .otp-input {
+    border-color: var(--error-message) !important;
+    color: var(--error-message)
 }
+
 ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
     margin-right: 0 !important;
 }
-.input-group  .countryCodeInput{
+
+.input-group .countryCodeInput {
     max-width: 60px;
-    padding:0 10px ;
+    padding: 0 10px;
     border-right: 1px solid var(--trout);
     text-align: center;
 }
+
 /************************** form and input ends **************/
 
 
@@ -667,9 +659,11 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 .mr-9 {
     margin-right: 9px;
 }
-.mt-8px{
+
+.mt-8px {
     margin-top: 8px;
 }
+
 .mt-22px {
     margin-top: 22px;
 }
@@ -677,6 +671,7 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 .mt-24px {
     margin-top: 24px;
 }
+
 .mt-60px {
     margin-top: 60px;
 }
@@ -767,9 +762,10 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 }
 
 
-.resend-otp{
+.resend-otp {
     text-transform: uppercase;
 }
+
 /************************footer *********************/
 footer {
     margin-top: 90px;
@@ -946,11 +942,13 @@ footer {
     }
 }
 
-@media screen and (min-width:768px){
-    .headerLoginbtn{
-        display: none;;
+@media screen and (min-width:768px) {
+    .headerLoginbtn {
+        display: none;
+        ;
     }
 }
+
 @media screen and (min-width:1266px) {
     .headertoggle {
         display: none;
@@ -965,10 +963,12 @@ footer {
     .desktop-menu {
         display: none;
     }
-    .headerPassword{
+
+    .headerPassword {
         display: none;
     }
-    .headerAuthMenu{
+
+    .headerAuthMenu {
         margin-left: auto;
     }
 }
@@ -1018,55 +1018,195 @@ input[type=number] {
 }
 
 .success-snackbar {
-    background-color: #4caf50!important; /* Green background color for success messages */
-    color: #fff!important; /* White text color */
-  }
-  
-  .mat-mdc-snack-bar-container .mdc-snackbar__surface{
+    background-color: #4caf50 !important;
+    /* Green background color for success messages */
+    color: #fff !important;
+    /* White text color */
+}
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
     background-color: var(--outer-space) !important;
     padding: 16px !important;
     border-radius: 16px !important;
     box-shadow: unset !important
-  }
+}
 
-  .cdk-global-overlay-wrapper .mat-mdc-dialog-container .mdc-dialog__surface{
+.cdk-global-overlay-wrapper .mat-mdc-dialog-container .mdc-dialog__surface {
     background-color: var(--mirage);
     border: 1px solid var(--trout);
     box-shadow: -1px 4px 34px 9px rgba(0, 0, 0, 0.65);
     border-radius: 10px;
-    padding: 45px 18px 20px  ;
+    padding: 45px 18px 20px;
     min-width: 309px;
-    
-  }
-  .cdk-global-overlay-wrapper .mat-mdc-dialog-container  img{
+
+}
+
+.cdk-global-overlay-wrapper .mat-mdc-dialog-container img {
     width: 50px;
     height: 50px;
     margin-bottom: 30px;
     display: block;
-    
-  }
 
-  .cdk-global-overlay-wrapper .mat-mdc-dialog-container  p{
-    margin-top: 10px ;
+}
+
+.cdk-global-overlay-wrapper .mat-mdc-dialog-container p {
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
 
-#countryCode{
+#countryCode {
     background-color: var(--outer-space);
-    color:var(--white);
+    color: var(--white);
     border: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-#countryCode:focus{
-    outline: 0 ;
+
+#countryCode:focus {
+    outline: 0;
 }
-.countryCode_wrapper{
+
+.countryCode_wrapper {
     display: flex;
     align-items: center;
     border-right: 1px solid var(--trout);
     /* padding-left: 36px; */
+}
+
+
+/*********************** card css*************************/
+.card.mdc-card{
+    width: 100%;
+    border: 1px solid var(--trout);
+    background-color: var(--outer-space) ; 
+    border-radius: 10px;  
+    height: 100%;
+    box-shadow: 0px 14px 54px 0px rgba(0, 0, 0, 0.25)
+}
+.blog-wrapper .card .card-category-tag{
+    background-color: var(--thunderbird);
+    border-radius: 6px 6px 0px 0px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    padding: 3px 6px;
+    color: var(--mirage);
+    display: inline-block;
+    position: absolute;
+    top:-18px;
+    left: 15px;
+    z-index: 9;
+}
+.blog-wrapper .card .mat-mdc-card-content{
+    padding: 20px 15px 15px;
+    position: relative;
+}
+.blog-wrapper .card .mat-mdc-card-content .meta-date{
+    color:var(--white-secondary);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
+.card .mat-mdc-card-title{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card  .mat-mdc-card-content p{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.card  .mat-mdc-card-content p{
+   display: none;
+}
+.card  .mat-mdc-card-content p:first-child{
+    display: -webkit-box;
+ }
+.card  .mdc-card__media{
+    height: 160px;
+    width: 100% !important;
+    object-fit: cover;
+} 
+
+.card .mdc-card__actions{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding: 0 15px 20px;
+    min-height: fit-content;
+}
+.card-group-col{
+    width: 100%;
+}
+@media screen and (min-width:768px){
+    .card-group-row{
+        display: flex;
+        flex-wrap:wrap;
+       margin: 0 -10px;
+    }
+    .card-group-col{
+        max-width: 33.33%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+}
+/*********************** card css*************************/
+
+/******************** nav css *****************************/
+.custom-nav .custom-navList{
+    display: flex;
+    list-style-type: none ;
+    padding-left: 0;
+    gap:25px;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--trout);
+}
+
+.custom-nav .custom-navList li a{
+    color: #BCBCBC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+}
+
+/* //////////// */
+/* styles.css (or your component's CSS file) */
+.active-link {
+    background-color: #f0f0f0; /* Customize the styling for the active link */
+    /* Add any other styles you want for active links */
+  }
+  /* //////////////////////////// */
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    color: black;
+}
+
+/************** blog page css ********/
+.middle-wrapper{
+    width:100%;
+}
+@media screen and (min-width:768px){
+    .middle-wrapper{
+        max-width:70%;
+        flex: 0 0 70%;
+    }
 }
