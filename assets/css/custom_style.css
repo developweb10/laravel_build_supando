@@ -828,6 +828,10 @@ footer {
     flex-wrap: wrap;
     gap: 8px
 }
+.footer-items{
+    list-style-type: none;
+    padding-left: 0;
+}
 
 @media screen and (min-width:1200px) {
     .footerContainer {
@@ -1111,7 +1115,8 @@ input[type=number] {
     font-style: normal;
     font-weight: 500;
 }
-.card .mat-mdc-card-title{
+.card .mat-mdc-card-title,
+.mat-mdc-card-content h1{
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1120,24 +1125,20 @@ input[type=number] {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.card  .mat-mdc-card-content p{
+ .card  .mat-mdc-card-content p{
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
 }
-
+/*
 .card  .mat-mdc-card-content p{
    display: none;
 }
 .card  .mat-mdc-card-content p:first-child{
     display: -webkit-box;
- }
-.card  .mdc-card__media{
+ } */
+ .blog-wrapper .card  .mdc-card__media{
     height: 160px;
     width: 100% !important;
     object-fit: cover;
@@ -1210,3 +1211,6 @@ input[type=number] {
         flex: 0 0 70%;
     }
 }
+
+/**************** promotions ***********/
+
