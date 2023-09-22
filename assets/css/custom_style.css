@@ -1242,10 +1242,128 @@ input[type=number] {
 }
 @media screen and (min-width:768px){
     .middle-wrapper{
-        max-width:70%;
-        flex: 0 0 70%;
+        max-width:72%;
+        flex: 0 0 72%;
     }
 }
 
 /**************** promotions ***********/
 
+
+/* Help */
+.help-wrapper h1{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.step-row{
+    display: flex;
+    gap:25px;
+    margin-bottom: 60px;
+}
+.step-row > div{
+    margin-bottom: 20px;
+}
+
+.single-step{
+    padding: 24px;
+    border-radius: 11px;
+    background: var(--outer-space);
+    margin-bottom: 14px;
+}
+.help-row{
+    display: flex;
+}
+.help-row > *{
+    width: 100%;
+}
+@media screen and (min-width:991px){
+    .help-row > .col-w1{
+        width: 8.33% ;
+    }
+    .help-row > .col-w2{
+        width: 16.66% ;
+    }
+    .help-row > .col-w3{
+        width: 24.99% ;
+    }
+    .help-row > .col-w5{
+        width: 41.65% ;
+    }
+}
+
+/* Help ends*/
+
+/***************** about css ****************/
+.about-section {
+    overflow: hidden;
+}
+.about-section h1{
+    margin-top: 15px;
+    margin-bottom: 37px;
+}
+.about-content{
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background: var(--outer-space);
+    padding: 75px 60px;
+    margin-bottom: 80px;
+    
+}
+
+.about-content p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.about-content p a{
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.about-content-row{
+    display: flex;
+
+}
+@media screen and (min-width:768px){
+    .about-content-text{
+        width: 50%;
+     
+     }
+     .about-content-image {
+         width: 50%;
+     }
+}
+
+@media screen and (min-width:1300px){
+    .about-content-text{
+        max-width:100%;
+        flex: 0 0 500px;
+        width: 500px;
+    }
+}
+
+
+.about-content-image img{
+    position: relative;
+    bottom: -120px;
+    transform: scale(1.5);
+    left: 35px;
+}
+
+@media screen and (max-width:767px){
+    .about-content-row{
+        flex-wrap: wrap;
+    }
+    .about-content-image img{
+        position: relative;
+        bottom: -80px;
+        /* transform: scale(2); */
+        left: 83%;
+    }
+}
