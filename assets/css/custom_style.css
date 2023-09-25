@@ -56,7 +56,7 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
+h3,.h3 {
     font-size: 16px;
     line-height: 1;
     font-weight: 600;
@@ -140,7 +140,6 @@ button {
     border-radius: 10px;
     text-transform: uppercase;
     color: var(--mirage);
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -229,7 +228,7 @@ header {
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 32px;
+    gap: 24px;
     flex-wrap: wrap;
 
 }
@@ -292,6 +291,7 @@ header {
     border-radius: 10px;
     padding: 6px 20px;
     line-height: 1;
+    font-size: 14px;
 }
 
 .headerWrapper .custom-input {
@@ -306,7 +306,7 @@ header {
     display: inline-flex;
     gap: 10px;
     align-items: center;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: 15px;
 }
 
@@ -330,6 +330,7 @@ header {
     color: var(--thunderbird);
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .cursor {
@@ -369,7 +370,36 @@ header {
     left: unset;
 
 }
+.headerPassword #loginCode{
+    padding: 2px 6px;
+    max-width: 50px;
+}
+.headerPassword select{
+    background-color: var(--mirage);
+    font-size: 12px;
+}
+.headerPassword select:focus{
+   border: 0;
+   outline: 0;
+}
+.desktop-menu.headerMenu{
+    margin-left: auto;
+}
+@media screen and (min-width:1440px){
+    .headerMenuLis{
+        gap: 32px;
+    }
+}
 
+@media screen and (max-width:1330px) and (min-width:1265px){
+    .headerMenuLis{
+        gap: 15px;
+    }
+    .headerPassword .headerLogin_link,
+    .headerAuthMenuList li a.headerRegister_link{
+        font-size: 12px;
+    }
+}
 /******header css ends******/
 
 /********************* Auth css*********************/
@@ -679,7 +709,9 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 .mb-24px {
     margin-bottom: 24px;
 }
-
+.mb-30px{
+    margin-bottom: 30px;
+}
 .mt-36px {
     margin-top: 36px;
 }
@@ -700,7 +732,9 @@ ng-otp-input .ng-otp-input-wrapper .otp-input:not(:last-child) {
 .w-100 {
     width: 100%;
 }
-
+.max-w-40px{
+    max-width: 55px ;
+}
 .marginbottom20px {
     margin-bottom: 20px;
 }
@@ -1274,32 +1308,38 @@ input[type=number] {
     background: var(--outer-space);
     margin-bottom: 14px;
 }
-.help-row{
+.custom-row{
     display: flex;
     flex-wrap: wrap;
 }
-.help-row > *{
+.custom-row > *{
     width: 100%;
 }
 @media screen and (min-width:991px){
-    .help-row > .col-w1{
+    .custom-row > .col-w1{
         max-width: 8.33% ;
     }
-    .help-row > .col-w2{
+    .custom-row > .col-w2{
         max-width: 16.66% ;
     }
-    .help-row > .col-w3{
+    .custom-row > .col-w3{
         max-width: 24.99% ;
     }
-    .help-row > .col-w5{
+    .custom-row > .col-w4{
+        max-width: 33.33% ;
+    }
+    .custom-row > .col-w5{
         max-width: 41.65% ;
     }
-    .help-row > .col-w8{
+    .custom-row > .col-w6{
+        max-width: 50% ;
+    }
+    .custom-row > .col-w8{
         max-width: 66.64% ;
     }
 }
 /* @media screen and (max-width:990px) {
-    .help-row{
+    .custom-row{
         display: flex;
     }
 } */
@@ -1395,4 +1435,61 @@ input[type=number] {
 /**************** work with us ***********/
 .banner-image{
     margin-top: 16px;
+}
+.workwithus-content{
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background: var(--outer-space);
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+@media screen and (min-width:1300px){
+    .workwithus-content{
+        padding: 36px 60px;
+    }
+}
+
+.workwithus-content-image img{
+    margin-bottom: -105px;
+    display: block;
+    margin-left: auto;
+}
+.workType-wrapper{
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background: var(--outer-space);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.workType-wrapper .h3{
+    margin-bottom: 8px;
+}
+.workwithus .search-box{
+    margin-bottom: 30px;
+    border-radius: 10px;    
+    border: 1px solid var(--trout);
+    background: var(--mirage);
+
+}
+.workwithus .search-box input.form-input{
+    background: var(--mirage) !important;
+
+}
+.workType-wrapper-links{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 18px;
+}
+.workType-wrapper-links a{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 9px 12px;
+}
+.workType-wrapper-links a.btn{
+    width: fit-content;
+    height: auto;
+    padding: 9px 24px;
 }
