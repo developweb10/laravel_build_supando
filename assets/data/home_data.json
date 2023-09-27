@@ -1,0 +1,442 @@
+[
+  {
+      "id": "B-105531",
+      "eventVersion": 1032,
+      "sportId": "FBL",
+      "competitionId": "B-1599",
+      "name": "SC Preussen 06 Munster v Bayern Munich",
+      "shortName": "PMU vs BMU",
+      "status": "OFFERED",
+      "tradeStatus": "TRADABLE",
+      "participants": [
+          [
+              {
+                  "id": "B-37156",
+                  "name": "SC Preussen 06 Munster",
+                  "shortName": "PMU"
+              },
+              {
+                  "id": "B-1947",
+                  "name": "Bayern Munich",
+                  "shortName": "BMU"
+              }
+          ]
+      ],
+      "miniCoupons": {
+          "MAIN": [
+              "B-3711808"
+          ],
+          "TOT+TOT1": [
+              "B-11029991",
+              ""
+          ],
+          "TOT1545": [
+              "",
+              "B-11029991",
+              "",
+              ""
+          ],
+          "WIN+NTS": [
+              "B-3711808",
+              ""
+          ],
+          "WIN+TOT": [
+              "B-3711808",
+              "B-11029991"
+          ],
+          "WIN+TOT25": [
+              "B-3711808",
+              "B-11029991"
+          ],
+          "WIN+TOTR2": [
+              "B-3711808",
+              "B-11029991",
+              ""
+          ]
+      },
+      "anticipated": {
+          "startTime": "2023-09-26T18:45:00Z",
+          "endTime": null
+      },
+      "actual": {
+          "startTime": null,
+          "endTime": null
+      },
+      "betting": {
+          "startTime": "2023-09-09T06:45:00Z",
+          "endTime": "2023-09-26T18:45:00Z"
+      },
+      "result": {
+          "currentScore": null,
+          "currentPeriod": {
+              "id": "NOTSTARTED",
+              "description": "Not started",
+              "additional": "",
+              "isPeriodFinished": false
+          },
+          "nextPeriodId": "",
+          "clock": {
+              "isCountdown": false,
+              "isRunning": false,
+              "displayClock": false,
+              "current": 0,
+              "referenceTime": "0001-01-01T00:00:00Z"
+          },
+          "isInPeriod": false
+      },
+      "type": "MATCH",
+      "externalId": "sr:match:41812015",
+      "feedId": "BETRADAR"
+  },
+  {
+      "id": "B-105533",
+      "eventVersion": 209,
+      "sportId": "FBL",
+      "competitionId": "B-1599",
+      "name": "SV Wehen Wiesbaden v RB Leipzig",
+      "shortName": "WEH vs RBL",
+      "status": "OFFERED",
+      "tradeStatus": "TRADABLE",
+      "participants": [
+          [
+              {
+                  "id": "B-31766",
+                  "name": "SV Wehen Wiesbaden",
+                  "shortName": "WEH"
+              },
+              {
+                  "id": "B-4466",
+                  "name": "RB Leipzig",
+                  "shortName": "RBL"
+              }
+          ]
+      ],
+      "miniCoupons": {
+          "1HTOTR2": [
+              "B-10581114",
+              "B-10581115"
+          ],
+          "BTS": [
+              "B-10581086"
+          ],
+          "H1TOT0525": [
+              "",
+              "B-10581114",
+              ""
+          ],
+          "H1WIN+H1TOT": [
+              "B-10581085",
+              "B-10581114"
+          ],
+          "H1WIN+H2WIN": [
+              "B-10581085",
+              "B-10581047"
+          ],
+          "H2WIN+H2TOT": [
+              "B-10581047",
+              "B-10581050"
+          ],
+          "HC+HC1": [
+              "B-10581146",
+              "B-10581147"
+          ],
+          "MAIN": [
+              "B-3711815"
+          ],
+          "TOT+TOT1": [
+              "B-10581035",
+              "B-10581036"
+          ],
+          "TOT1545": [
+              "B-10581033",
+              "B-10581034",
+              "B-10581035",
+              "B-10581036"
+          ],
+          "WIN+NTS": [
+              "B-3711815",
+              "B-10581083"
+          ],
+          "WIN+TOT": [
+              "B-3711815",
+              "B-10581035"
+          ],
+          "WIN+TOT25": [
+              "B-3711815",
+              "B-10581034"
+          ],
+          "WIN+TOTR2": [
+              "B-3711815",
+              "B-10581035",
+              "B-10581036"
+          ]
+      },
+      "anticipated": {
+          "startTime": "2023-09-27T18:45:00Z",
+          "endTime": null
+      },
+      "actual": {
+          "startTime": null,
+          "endTime": null
+      },
+      "betting": {
+          "startTime": "2023-09-10T06:45:00Z",
+          "endTime": "2023-09-27T18:45:00Z"
+      },
+      "result": {
+          "currentScore": null,
+          "currentPeriod": {
+              "id": "NOTSTARTED",
+              "description": "Not started",
+              "additional": "",
+              "isPeriodFinished": false
+          },
+          "nextPeriodId": "",
+          "clock": {
+              "isCountdown": false,
+              "isRunning": false,
+              "displayClock": false,
+              "current": 0,
+              "referenceTime": "0001-01-01T00:00:00Z"
+          },
+          "isInPeriod": false
+      },
+      "type": "MATCH",
+      "externalId": "sr:match:41812073",
+      "feedId": "BETRADAR"
+  },
+  {
+      "id": "B-117018",
+      "eventVersion": 71,
+      "sportId": "FBL",
+      "competitionId": "B-1153",
+      "name": "CA Osasuna v Atletico Madrid",
+      "shortName": "OSA vs ATM",
+      "status": "OFFERED",
+      "tradeStatus": "TRADABLE",
+      "participants": [
+          [
+              {
+                  "id": "B-16779",
+                  "name": "CA Osasuna",
+                  "shortName": "OSA"
+              },
+              {
+                  "id": "B-16718",
+                  "name": "Atletico Madrid",
+                  "shortName": "ATM"
+              }
+          ]
+      ],
+      "miniCoupons": {
+          "1HTOTR2": [
+              "B-10810352",
+              "B-10810356"
+          ],
+          "BTS": [
+              "B-10810327"
+          ],
+          "H1TOT0525": [
+              "B-10810354",
+              "B-10810355",
+              ""
+          ],
+          "H1WIN+H1TOT": [
+              "B-10810326",
+              "B-10810352"
+          ],
+          "H1WIN+H2WIN": [
+              "B-10810326",
+              "B-10810292"
+          ],
+          "H2WIN+H2TOT": [
+              "B-10810292",
+              "B-10810295"
+          ],
+          "HC+HC1": [
+              "B-10810389",
+              "B-10810388"
+          ],
+          "MAIN": [
+              "B-10810277"
+          ],
+          "TOT+TOT1": [
+              "B-10810397",
+              "B-10810396"
+          ],
+          "TOT1545": [
+              "B-10810396",
+              "B-10810397",
+              "B-10810398",
+              "B-10810399"
+          ],
+          "WIN+NTS": [
+              "B-10810277",
+              "B-10810324"
+          ],
+          "WIN+TOT": [
+              "B-10810277",
+              "B-10810397"
+          ],
+          "WIN+TOT25": [
+              "B-10810277",
+              "B-10810397"
+          ],
+          "WIN+TOTR2": [
+              "B-10810277",
+              "B-10810397",
+              "B-10810396"
+          ]
+      },
+      "anticipated": {
+          "startTime": "2023-09-28T19:30:00Z",
+          "endTime": null
+      },
+      "actual": {
+          "startTime": null,
+          "endTime": null
+      },
+      "betting": {
+          "startTime": "2023-09-11T07:30:00Z",
+          "endTime": "2023-09-28T19:30:00Z"
+      },
+      "result": {
+          "currentScore": null,
+          "currentPeriod": {
+              "id": "NOTSTARTED",
+              "description": "Not started",
+              "additional": "",
+              "isPeriodFinished": false
+          },
+          "nextPeriodId": "",
+          "clock": {
+              "isCountdown": false,
+              "isRunning": false,
+              "displayClock": false,
+              "current": 0,
+              "referenceTime": "0001-01-01T00:00:00Z"
+          },
+          "isInPeriod": false
+      },
+      "type": "MATCH",
+      "externalId": "sr:match:41893025",
+      "feedId": "BETRADAR"
+  },
+  {
+      "id": "B-117019",
+      "eventVersion": 96,
+      "sportId": "FBL",
+      "competitionId": "B-1153",
+      "name": "Real Sociedad San Sebastian v Getafe CF",
+      "shortName": "RSO vs GET",
+      "status": "OFFERED",
+      "tradeStatus": "TRADABLE",
+      "participants": [
+          [
+              {
+                  "id": "B-22389",
+                  "name": "Real Sociedad San Sebastian",
+                  "shortName": "RSO"
+              },
+              {
+                  "id": "B-12241",
+                  "name": "Getafe CF",
+                  "shortName": "GET"
+              }
+          ]
+      ],
+      "miniCoupons": {
+          "1HTOTR2": [
+              "B-9621737",
+              "B-9621733"
+          ],
+          "BTS": [
+              "B-9621706"
+          ],
+          "H1TOT0525": [
+              "B-9621735",
+              "B-9621736",
+              ""
+          ],
+          "H1WIN+H1TOT": [
+              "B-9621705",
+              "B-9621737"
+          ],
+          "H1WIN+H2WIN": [
+              "B-9621705",
+              "B-9621664"
+          ],
+          "H2WIN+H2TOT": [
+              "B-9621664",
+              "B-9621665"
+          ],
+          "HC+HC1": [
+              "B-9621767",
+              "B-9621769"
+          ],
+          "MAIN": [
+              "B-9621650"
+          ],
+          "TOT+TOT1": [
+              "B-9621775",
+              "B-9621774"
+          ],
+          "TOT1545": [
+              "B-9621774",
+              "B-9621775",
+              "B-9621776",
+              "B-9621777"
+          ],
+          "WIN+NTS": [
+              "B-9621650",
+              "B-9621703"
+          ],
+          "WIN+TOT": [
+              "B-9621650",
+              "B-9621775"
+          ],
+          "WIN+TOT25": [
+              "B-9621650",
+              "B-9621775"
+          ],
+          "WIN+TOTR2": [
+              "B-9621650",
+              "B-9621775",
+              "B-9621774"
+          ]
+      },
+      "anticipated": {
+          "startTime": "2023-09-24T12:00:00Z",
+          "endTime": null
+      },
+      "actual": {
+          "startTime": null,
+          "endTime": null
+      },
+      "betting": {
+          "startTime": "2023-09-07T00:00:00Z",
+          "endTime": "2023-09-24T12:00:00Z"
+      },
+      "result": {
+          "currentScore": null,
+          "currentPeriod": {
+              "id": "NOTSTARTED",
+              "description": "Not started",
+              "additional": "",
+              "isPeriodFinished": false
+          },
+          "nextPeriodId": "",
+          "clock": {
+              "isCountdown": false,
+              "isRunning": false,
+              "displayClock": false,
+              "current": 0,
+              "referenceTime": "0001-01-01T00:00:00Z"
+          },
+          "isInPeriod": false
+      },
+      "type": "MATCH",
+      "externalId": "sr:match:41893015",
+      "feedId": "BETRADAR"
+  }
+]
