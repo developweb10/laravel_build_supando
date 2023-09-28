@@ -351,9 +351,11 @@ display: none;
 }
 
 .toggle-menu {
-    position: fixed;
-    top: 56px;
-    left: 0;
+    position: absolute;
+    /* top: 56px;
+    left: 0; */
+    top: 42px;
+    left: -16px;
     min-width: 200px;
     background-color: var(--outer-space);
     margin-right: 0;
