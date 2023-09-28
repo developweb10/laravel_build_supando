@@ -31,7 +31,7 @@ h3,
 h4,
 p,
 body * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     color: var(--white);
 }
 
@@ -211,9 +211,10 @@ header {
     width: 86px;
 }
 
-.headerLogo .headertoggle {
+.headerWrapper .headerToggle {
     width: 26px;
     line-height: 1;
+    margin-right: 24px;
 }
 
 .headerLogo img {
@@ -306,10 +307,22 @@ header {
     display: inline-flex;
     gap: 10px;
     align-items: center;
-    /* margin-left: auto; */
     margin-right: 15px;
 }
-
+.headerPassword .ng-value-container,
+.headerPassword .ng-option{
+    background-color: var(--mirage);
+    padding: 4px;
+    width: 27px;
+    height: 27px;
+}
+.headerPassword  .ng-clear-wrapper {
+display: none;
+}
+.headerPassword .ng-value-container img{
+    width: 20px;
+    height: 20px;
+}
 .headerInputGroup {
     position: relative;
 }
@@ -338,14 +351,16 @@ header {
 }
 
 .toggle-menu {
-    position: absolute;
-    top: 154%;
+    position: fixed;
+    top: 56px;
     left: 0;
-    min-width: 150px;
+    min-width: 200px;
     background-color: var(--outer-space);
-    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.30);
     margin-right: 0;
     transition: 0.6s all ease;
+    z-index: 999;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /* .headerToggle{
@@ -400,6 +415,12 @@ header {
         font-size: 12px;
     }
 }
+/* @media screen and (max-width:1265px) { */
+    .headerPassword,
+    .header_userProfile{
+        margin-left: auto;
+     }
+/* } */
 /******header css ends******/
 
 /********************* Auth css*********************/
@@ -1495,6 +1516,9 @@ input[type=number] {
 }
 
 /********************sports page css**************************/
+.sports-section{
+    padding: 16px 20px;
+}
 .logo-container {
     background-color: var(--trout);
     border-radius: 10px;
@@ -1531,4 +1555,69 @@ input[type=number] {
     font-weight: 500;
     line-height: 16px; 
     letter-spacing: -0.36px;
+}
+.custom-checkbox-group{
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--white-secondary);
+    background: var(--outer-space);
+}
+.custom-checkbox-group input[type="checkbox"]~.check-icon{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-checkbox-group input[type="checkbox"]{
+    appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.custom-checkbox-group input[type="checkbox"]:checked~.check-icon{
+    opacity: 1;
+    background: var(--thunderbird)
+}
+.matches-tab {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    gap:15px;
+    padding: 4px 10px;
+    margin-top: 14px;
+    border-radius: 4px;
+    background: #2C3538;
+}
+.matches-tab button{
+    position: relative;
+    color: var(--white-secondary);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    display: inline-block;
+}
+.matches-tab button.active{
+    color:var(--thunderbird)
+}
+.matches-tab button:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top:50%;
+    transform: translateY(-50%);
+    right: -7px;
+    background-color: var(--white-secondary);
 }
