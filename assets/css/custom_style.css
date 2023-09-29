@@ -1623,3 +1623,28 @@ input[type=number] {
     right: -7px;
     background-color: var(--white-secondary);
 }
+
+/*************terms and condition wrapper********************/
+.terms-section{
+    padding: 55px 15px 120px;
+}
+
+.terms-main-wrapper{
+    max-width: 926px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.terms-main-wrapper .h1{
+    margin-bottom: 37px;
+}
+.terms-wrapper{
+    max-width: 956px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 60px 35px;
+    border-radius: 10px;
+    background-color: var(--outer-space);
+    border: 1px solid  var(--trout);
+    margin-bottom: 60px;
+}
