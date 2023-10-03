@@ -72,6 +72,9 @@ MIT
 ng-otp-input
 MIT
 
+ngx-owl-carousel-o
+MIT
+
 ngx-toastr
 MIT
 The MIT License (MIT)

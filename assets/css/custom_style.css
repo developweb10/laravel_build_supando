@@ -1360,6 +1360,9 @@ input[type=number] {
     .custom-row > .col-w8{
         max-width: 66.64% ;
     }
+    .custom-row > .col-w10{
+        max-width: 83.33% ;
+    }
 }
 /* @media screen and (max-width:990px) {
     .custom-row{
@@ -1647,4 +1650,65 @@ input[type=number] {
     background-color: var(--outer-space);
     border: 1px solid  var(--trout);
     margin-bottom: 60px;
+}
+.sports-betting-rule a{
+    color: var(--thunderbird);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    text-decoration-line: underline;
+}
+.contact-wrapper{
+    border-radius: 11px;
+background: var(--outer-space);
+}
+
+/****************** splash ********************/
+.splashBanner{
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background: var(--outer-space);
+    padding: 0 70px;
+}
+
+.splash-card{
+    border-radius: 10px;
+    border: 1px solid var(--trout);
+    background: var(--outer-space);
+}
+.splash-card .splash-card-title{
+    background-color: var(--thunderbird);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color:#000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.splash-center-break{
+    text-align: center;
+    position: relative;
+    
+}
+
+.splash-center-break::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--thunderbird);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.splash-center-break> h2 {
+    background-color: var(--mirage);
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
 }
