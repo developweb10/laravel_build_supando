@@ -1676,6 +1676,10 @@ background: var(--outer-space);
     border-radius: 10px;
     border: 1px solid var(--trout);
     background: var(--outer-space);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 .splash-card .splash-card-title{
     background-color: var(--thunderbird);
@@ -1685,8 +1689,12 @@ background: var(--outer-space);
     font-weight: 800;
     line-height: normal;
     color:#000000;
-    padding: 20px;
+    padding: 13px;
     border-radius: 10px;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .splash-center-break{
@@ -1711,4 +1719,49 @@ background: var(--outer-space);
     padding-left: 30px;
     padding-right: 30px;
     display: inline-block;
+}
+
+
+.custom-carousel .owl-theme .owl-nav [class*=owl-]{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--thunderbird);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 0;
+
+}
+.custom-carousel .owl-theme .owl-nav [class*=owl-].disabled{
+    background-color: var(--trout);
+    opacity: 1;
+}
+.custom-carousel .owl-theme .owl-nav [class*=owl-]:not(.disabled) img{
+    filter: invert(1);
+}
+.custom-carousel .owl-theme .owl-nav [class*=owl-]:not(.disabled):hover{
+    background-color: var(--thunderbird);
+}
+.custom-carousel .owl-theme .owl-nav .owl-prev{
+    left:-18px;
+}
+.custom-carousel .owl-theme .owl-nav .owl-next{
+    right:-18px;
+
+}
+
+@media screen and (max-width:1400px){
+    .splash-card .splash-card-title{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .splashBanner{
+        padding: 0 30px;
+    }
 }
