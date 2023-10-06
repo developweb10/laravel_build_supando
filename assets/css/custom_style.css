@@ -160,7 +160,7 @@ button {
 
 }
 
-.btn.btn-primary:focus,
+/* .btn.btn-primary:hover, */
 .btn.btn-primary:active {
     background-color: #D19700;
 }
@@ -1022,64 +1022,6 @@ footer {
 }
 
 
-/************************************** Responsive css ***********************/
-@media screen and (max-width:1425px) and (min-width:768px) {
-    .headerMenuList li a {
-        font-size: 12px;
-    }
-
-    .headerLogo {
-        margin-right: 30px;
-    }
-
-    .headerMenuList li.active a:before {
-        bottom: -23px;
-    }
-}
-
-@media screen and (max-width:1265px) and (min-width:768px) {
-    .headerLogo {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .headerMenu {
-        display: none;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .headerLoginbtn {
-        display: none;
-        ;
-    }
-}
-
-@media screen and (min-width:1266px) {
-    .headertoggle {
-        display: none;
-    }
-
-    .toggle-menu {
-        display: none;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .desktop-menu {
-        display: none;
-    }
-
-    .headerPassword {
-        display: none;
-    }
-
-    .headerAuthMenu {
-        margin-left: auto;
-    }
-}
-
 /* CSS for the modal overlay */
 .modal-overlay {
     position: fixed;
@@ -1257,19 +1199,7 @@ input[type=number] {
 .card-group-col{
     width: 100%;
 }
-@media screen and (min-width:768px){
-    .card-group-row{
-        display: flex;
-        flex-wrap:wrap;
-       margin: 0 -10px;
-    }
-    .card-group-col{
-        max-width: 33.33%;
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
-    
-}
+
 /*********************** card css*************************/
 
 /******************** nav css *****************************/
@@ -1479,11 +1409,6 @@ input[type=number] {
     background: var(--outer-space);
     align-items: flex-end;
     margin-bottom: 36px;
-}
-@media screen and (min-width:1300px){
-    .workwithus-content{
-        padding: 36px 60px;
-    }
 }
 
 .workwithus-content-image img{
@@ -1777,20 +1702,6 @@ line-height: normal;
 
 }
 
-@media screen and (max-width:1400px){
-    .splash-card .splash-card-title{
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width:767px){
-    .splashBanner{
-        padding: 0 30px;
-    }
-    .custom-carousel .owl-theme .owl-nav{
-        display: none;
-    }
-}
 
 .splash-login-header .input-group .input-logo img{
   min-width: 20px;
@@ -1829,3 +1740,98 @@ line-height: normal;
   .mobile-header .headerMenuList li a{
     white-space: nowrap;
   }
+
+
+  
+/************************************** Responsive css ***********************/
+
+@media screen and (min-width:768px){
+    .card-group-row{
+        display: flex;
+        flex-wrap:wrap;
+       margin: 0 -10px;
+    }
+    .card-group-col{
+        max-width: 33.33%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (min-width:1300px){
+    .workwithus-content{
+        padding: 36px 60px;
+    }
+}
+
+
+@media screen and (max-width:1400px){
+    .splash-card .splash-card-title{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:1425px) and (min-width:768px) {
+    .headerMenuList li a {
+        font-size: 12px;
+    }
+
+    .headerLogo {
+        margin-right: 30px;
+    }
+
+    .headerMenuList li.active a:before {
+        bottom: -23px;
+    }
+}
+
+@media screen and (max-width:1265px) and (min-width:768px) {
+    .headerLogo {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .headerMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .headerLoginbtn {
+        display: none;
+        ;
+    }
+}
+
+@media screen and (min-width:1266px) {
+    .headertoggle {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .headerPassword {
+        display: none;
+    }
+
+    .headerAuthMenu {
+        margin-left: auto;
+    }
+    .splashBanner{
+        padding: 0 30px;
+    }
+    .custom-carousel .owl-theme .owl-nav{
+        display: none;
+    }
+    .desktop-AuthMenu{
+      display: none;
+    }
+}
