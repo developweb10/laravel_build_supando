@@ -1160,13 +1160,13 @@ input[type=number] {
 }
 .blog-wrapper .card .mat-mdc-card-content .meta-date{
     color:var(--white-secondary);
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
 }
 .card .mat-mdc-card-title,
 .mat-mdc-card-content h1{
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -1175,10 +1175,10 @@ input[type=number] {
     margin-bottom: 5px;
 }
  .card  .mat-mdc-card-content p{
-    font-size: 10px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.2;
 }
 /*
 .card  .mat-mdc-card-content p{
@@ -1187,7 +1187,7 @@ input[type=number] {
 .card  .mat-mdc-card-content p:first-child{
     display: -webkit-box;
  } */
- .blog-wrapper .card  .mdc-card__media{
+ .card  .mdc-card__media{
     height: 160px;
     width: 100% !important;
     object-fit: cover;
@@ -1219,7 +1219,7 @@ input[type=number] {
 
 .custom-nav .custom-navList li a{
     color: #BCBCBC;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.36px;
@@ -1753,7 +1753,7 @@ line-height: normal;
   .splash-login-header  .input-group .form-input.ng-touched{
       font-size: 14px;
   }
-  .splash-login-header input[placeholder="Phone Number"]{
+  .splash-login-header input[type="number"]{
     padding: 0;
   }
   
@@ -1828,6 +1828,14 @@ line-height: normal;
 }
 
 @media screen and (max-width:767px) {
+    .headerMenuList li a,
+    .headerAuthMenuList li a{
+        font-size:14px;
+    }
+    .card .mat-mdc-card-title,
+    .mat-mdc-card-content h1{
+    font-size: 16px;
+    }
     .desktop-menu {
         display: none;
     }
