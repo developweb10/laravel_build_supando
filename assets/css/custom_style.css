@@ -318,6 +318,8 @@ header {
     width: 27px;
     height: 27px;
 }
+
+
 .headerPassword  .ng-clear-wrapper {
 display: none;
 }
@@ -1743,7 +1745,17 @@ line-height: normal;
     white-space: nowrap;
   }
 
-
+  .splash-login-header  .headerPassword .ng-value-container,
+  .splash-login-header  .headerPassword .ng-option{
+      background-color: var(--outer-space);
+  }
+  .splash-login-header  .input-group .form-input,
+  .splash-login-header  .input-group .form-input.ng-touched{
+      font-size: 14px;
+  }
+  .splash-login-header input[placeholder="Phone Number"]{
+    padding: 0;
+  }
   
 /************************************** Responsive css ***********************/
 
