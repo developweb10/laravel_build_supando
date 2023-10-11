@@ -1391,17 +1391,7 @@ input[type=number] {
     left: 35px;
 }
 
-@media screen and (max-width:767px){
-    .about-content-row{
-        flex-wrap: wrap;
-    }
-    .about-content-image img{
-        position: relative;
-        bottom: -80px;
-        /* transform: scale(2); */
-        left: 83%;
-    }
-}
+
 
 /**************** work with us ***********/
 .banner-image{
@@ -1830,7 +1820,7 @@ line-height: normal;
 @media screen and (max-width:767px) {
     .headerMenuList li a,
     .headerAuthMenuList li a{
-        font-size:14px;
+        font-size:12px;
     }
     .card .mat-mdc-card-title,
     .mat-mdc-card-content h1{
@@ -1856,4 +1846,44 @@ line-height: normal;
     .desktop-AuthMenu{
       display: none;
     }
+    .about-content{
+        padding: 20px;
+    }
+    .about-content-row{
+        flex-wrap: wrap;
+    }
+    .about-content-image img{
+        position: relative;
+        bottom: -80px;
+        /* transform: scale(2); */
+        left: 0%;
+    }
+    .workwithus-content,.terms-wrapper{
+        padding: 20px;
+    }
+}
+
+.dropdown-arrow:after, 
+.dropdown-arrow:before {
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-color: #4D585D;
+    border-style: solid;
+    content: "";
+    transform: rotate(45deg);
+    position: absolute;
+    right: 16px;
+    top:-5px;
+}
+.dropdown-arrow:before{
+    background-color: #2C3538;
+}
+.dropdown-arrow:after{
+    height: 9px;
+    width: 9px;
+    transform: rotate(-140deg);
+    background-color: #2C3538;
+}
+.splash-login-header #popup-message{
+    top:calc(100% + 14px)
 }
