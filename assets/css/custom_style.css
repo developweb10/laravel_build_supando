@@ -180,7 +180,8 @@ img {
     display: block;
 }
 
-a {
+a,
+p a {
     color: var(--thunderbird);
 
 }
@@ -1212,7 +1213,6 @@ input[type=number] {
     list-style-type: none ;
     padding-left: 0;
     gap:25px;
-    padding-bottom: 18px;
     margin-bottom: 24px;
     border-bottom: 1px solid var(--trout);
     overflow-x: auto;
@@ -1751,7 +1751,9 @@ line-height: normal;
   .splash-login-header [name="phoneNumber"]{
     padding: 0!important;
   }
-  
+  .card-group-col{
+    margin-bottom: 20px;
+  }
 /************************************** Responsive css ***********************/
 
 @media screen and (min-width:768px){
@@ -1763,7 +1765,7 @@ line-height: normal;
     .card-group-col{
         max-width: 33.33%;
         padding: 0 10px;
-        margin-bottom: 20px;
+        
     }
     
 }
@@ -1898,3 +1900,4 @@ line-height: normal;
     margin: 24px 0;
     width: 100%;
 }
+
