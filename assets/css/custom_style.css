@@ -160,7 +160,7 @@ button {
 
 }
 
-.btn.btn-primary:focus,
+/* .btn.btn-primary:focus, */
 .btn.btn-primary:active {
     background-color: #D19700;
 }
@@ -1901,3 +1901,32 @@ line-height: normal;
     width: 100%;
 }
 
+/* About */
+ /* .vist:link {
+    color: blue !important;
+    text-decoration: none;
+    #3366CC 
+  } */
+  
+  /* Visited link */
+  a.vist{
+    color:#3366CC;
+    text-decoration: none;
+  }
+ .vist:visited {
+    color: #795CB2 !important;
+    text-decoration: none;
+  }
+  
+  /* Mouse over link */
+ .vist:hover {
+    color: #BD1622!important;
+    text-decoration: underline;
+  }
+  
+  /* Selected link */
+ .vist:active {
+    color: #BD1622 !important;
+    text-decoration: underline;
+  }
+  /* About */
