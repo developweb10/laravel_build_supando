@@ -23,6 +23,24 @@
     --error-message: #FF5353;
 }
 
+.text-yellow-400, .text-yellow-400 div{
+    color:var(--thunderbird);
+}
+.border-yellow-400 {
+    border-color:var(--thunderbird) ;
+}
+.text-zinc-400 div, .text-zinc-400{
+    color:var(--white-secondary);
+}
+[class*="border-b"]{
+    border-bottom-style:solid ;
+}
+.Checkbox path{
+   color:#2C3538 !important
+}
+.Checkbox.bg-yellow-400 svg path{
+    color:#000 !important
+}
 
 body,
 h1,
@@ -1022,7 +1040,6 @@ footer {
 
 .flex {
     display: flex;
-    justify-content: space-between;
     margin: 5px;
 
 }
