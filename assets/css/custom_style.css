@@ -1359,38 +1359,47 @@ input[type=number] {
 @media screen and (min-width:991px) {
     .custom-row>.col-w1 {
         max-width: 8.33%;
+        flex: 0 0 8.33%;
     }
 
     .custom-row>.col-w2 {
         max-width: 16.66%;
+        flex: 0 0 16.66%;
     }
 
     .custom-row>.col-w3 {
         max-width: 24.99%;
+        flex: 0 0 24.99%;
     }
 
     .custom-row>.col-w4 {
         max-width: 33.33%;
+        flex: 0 0 33.33%;
     }
 
     .custom-row>.col-w5 {
         max-width: 41.65%;
+        flex: 0 0 41.65%;
     }
 
     .custom-row>.col-w6 {
         max-width: 50%;
+        flex: 0 0 50%;
     }
 
     .custom-row>.col-w7 {
         max-width: 58.31%;
+        flex: 0 0 58.31%;
     }
 
     .custom-row>.col-w8 {
         max-width: 66.64%;
+        flex: 0 0 66.64%;
     }
 
     .custom-row>.col-w10 {
         max-width: 83.33%;
+        flex: 0 0 83.33%;
     }
 }
 
