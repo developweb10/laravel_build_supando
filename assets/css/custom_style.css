@@ -1858,22 +1858,26 @@ input[type=number] {
 .mobile-header .headerMenuList {
     flex-wrap: nowrap;
 }
-
+.mobile-header .headerLinkSection{
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
 .mobile-header .headerLinkSection::-webkit-scrollbar {
-    height: 5px;
+    display: none;
+    height: 0;
     width: 0;
 }
 
 .mobile-header .headerLinkSection::-webkit-scrollbar-thumb {
-    height: 5px;
-    background-color: var(--outer-space);
+    display: none;
+    height: 0;
     width: 0;
 
 }
 
 .mobile-header .headerLinkSection::-webkit-scrollbar-track {
-    height: 5px;
-    background-color: var(--mirage);
+    display: none;
+    height: 0;
     width: 0;
 }
 
@@ -2003,6 +2007,9 @@ input[type=number] {
     .custom-carousel .owl-theme .owl-nav {
         display: none;
     }
+    .banner-carousel .owl-theme .owl-nav {
+        display: none;
+    }
 
     .desktop-AuthMenu {
         display: none;
@@ -2076,10 +2083,10 @@ a.vist {
     text-decoration: none;
 }
 
-.vist:visited {
+/* .vist:visited {
     color: #795CB2 !important;
     text-decoration: none;
-}
+} */
 
 /* Mouse over link */
 .vist:hover {
@@ -2092,5 +2099,48 @@ a.vist {
     color: #BD1622 !important;
     text-decoration: underline;
 }
+/* banner-carousel */
+.banner-carousel .owl-theme .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--thunderbird);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 0;
 
-/* About */
+}
+
+.banner-carousel .owl-theme .owl-nav [class*=owl-].disabled {
+    background-color: var(--trout);
+    opacity: 1;
+}
+
+.banner-carousel .owl-theme .owl-nav [class*=owl-]:not(.disabled) img {
+    filter: invert(1);
+}
+
+.banner-carousel .owl-theme .owl-nav [class*=owl-]:not(.disabled):hover {
+    background-color: var(--thunderbird);
+}
+
+.banner-carousel .owl-theme .owl-nav .owl-prev {
+    left: 0;
+}
+
+.banner-carousel .owl-theme .owl-nav .owl-next {
+    right: 0;
+
+}
+
+/* banner-carousel */
+
+
+
+input[type="range"]::-webkit-slider-runnable-track-progress {
+ background-color: #FFC600; 
+}
